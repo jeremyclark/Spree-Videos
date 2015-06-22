@@ -1,4 +1,4 @@
-Spree::Core::Engine.routes.append do
+Spree::Core::Engine.routes.draw do
   resources :videos
   resources :products do
     get 'videos' => 'videos#product_index'
